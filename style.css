@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ip-address-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.ip-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./images/pattern-bg-desktop.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+.ip-address-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 35px;
+    font-family: Rubik;
+}
+
+.btn-search {
+    background-color: #111111;
+    border: none;
+    padding: 20px 25px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+
+.input-search {
+    padding: 20px;
+    width: 35%;
+    border-radius: 15px 0 0 15px;
+    border: none;
+}
+
+.input-search::placeholder{
+    font-size: 18px;
+}
+
+.input-search:focus {
+    outline: none;
+}
+
+.ip-address-information {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 50px auto;
+    background-color: #fff;
+    /* position: relative;
+    top: 70px; */
+    /* left: 50px; */
+    padding: 20px 40px;
+    height: 20%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.information-ip {
+    font-size: 14px;
+    color: #969DBB;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+
+.info {
+    margin-right: 5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#map {
+    height: 70vh;
+    width: 100%;
+
+}
+
+.btn-closed {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.7s ease-in-out;
+}
+
+
+.btn-closed:hover {
+    transform: rotate(360deg);
+    transform-origin: center;
+
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  
+}
+
+/* Mobil cihazlar */
+@media screen and (max-width: 767px) {
+    .ip-address-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        position: relative;
+    
+
+    }
+
+
+
+}

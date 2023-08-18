@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <script src="index.js" defer></script>
+  <title> IP Address Tracker</title>
+</head>
+
+<body>
+
+  <div class="ip-address-container">
+    <div class="ip-address">
+      <!-- 1 -->
+      <div class="ip-adress-logo">
+        <h1 class="logo">IP Address Tracker</h1>
+      </div>
+      <!-- 2 -->
+      <p class="blank"></p>
+      <div class="ip-address-input">
+       
+        <input type="text" class="input-search input"  placeholder="Search IP Address">
+        <button class="btn-search"><img src="./images/icon-arrow.svg" disabled></button>
+      </div>
+      <!-- 3 -->
+      <div class="ip-address-information">
+      
+        <div class="ip info">
+          <p class="information-ip">IP ADDRESS</p>
+          <p class="ip-addr"></p>
+        </div>
+
+        <div class="location info">
+          <p class="information-ip">LOCATION</p>
+          <p class="country_code"></p>
+        </div>
+
+        <div class="timezone info">
+          <p class="information-ip">TIMEZONE</p>
+          <p class="utc"></p>
+        </div>
+
+        <div class="isp info">
+          <p class="information-ip">ISP</p>
+          <p class="country_calling_code"></p>
+
+        </div>
+
+      </div>
+
+      <div id="map">xerite</div>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="index.js"></script>
+
+  <script type="module" defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB31rKnpoviwC3ICW42279ewsgOcMr2Tvk&callback=initMap"
+    type="text/javascript"></script>
+</body>
+
+</html>
