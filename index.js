@@ -27,13 +27,11 @@ getLocation()
 btnSearch.addEventListener("click", getLocation)
 
 function initMap(lat, lng) {
-    const parsedLat = parseFloat(lat);
-    const parsedLng = parseFloat(lng);
     map = new google.maps.Map(document.getElementById("map"), {
         zoom: 8,
         center: {
-            lat:parsedLat,
-            lng:parsedLng
+            lat,
+            lng
         },
         mapTypeControl: false,
     });
